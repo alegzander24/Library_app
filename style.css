@@ -77,6 +77,13 @@ p {
 	padding: 5px 20px;
 	font-size: 1rem;
 	font-weight: bold;
+	transition: all 0.1s ease-in-out;
+}
+
+.add:hover {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
 }
 
 .card .buttons {
@@ -114,4 +121,83 @@ p {
 
 .card .remove:hover {
 	color: red;
+}
+
+/* Form */
+
+dialog {
+	border-radius: 10px;
+	background: transparent;
+	border: 2px solid rgb(187, 187, 187);
+	backdrop-filter: blur(5px);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 1.5rem;
+}
+
+#status {
+	width: 20px;
+	height: 20px;
+	accent-color: black;
+	background-color: transparent;
+	border: 2px solid black;
+}
+
+input[type="text"] {
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	display: block;
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 15px;
+	border: 2px solid black;
+	background: transparent;
+	color: white;
+	font-family: inherit;
+	font-weight: 500;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	border: 2px solid white;
+}
+
+form label {
+	color: rgb(199, 199, 199);
+	font-weight: bold;
+}
+
+::backdrop {
+	backdrop-filter: blur(1px);
+}
+
+/* Form buttons */
+
+form .buttons {
+	display: flex;
+	gap: 10px;
+}
+
+form button {
+	background: transparent;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	flex: 1;
+	border: 2px solid black;
+	/* background-color: white; */
+	font-family: inherit;
+	transition: all 0.1s ease-in-out;
+	font-weight: bold;
+}
+
+form button:hover {
+	transform: scale(1.1);
+	background-color: black;
+	color: white;
 }

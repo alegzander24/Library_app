@@ -23,7 +23,7 @@
 	<body>
 		<header>
 			<div>My Library</div>
-			<button class="add">Add</button>
+			<button class="add">ADD</button>
 		</header>
 		<main>
 			<div class="container">
@@ -68,6 +68,33 @@
 						<button class="state">read</button>
 					</div>
 				</div> -->
+
+				<dialog>
+					<form id="bookForm" action="">
+						<div>
+							<label for="name">Book name</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div>
+							<label for="author">Author</label>
+							<input type="text" name="author" id="author" required />
+						</div>
+
+						<div>
+							<label for="pages">Number of pages</label>
+							<input type="text" name="pages" id="pages" required />
+						</div>
+						<div>
+							<label for="status">status</label>
+							<input type="checkbox" id="status" name="status" required />
+						</div>
+
+						<div class="buttons">
+							<button id="submit" type="submit">Add</button>
+							<button id="close" type="reset">Close</button>
+						</div>
+					</form>
+				</dialog>
 			</div>
 		</main>
 	</body>
