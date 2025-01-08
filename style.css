@@ -1,9 +1,13 @@
 body {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
-	background-color: rgb(114, 36, 150);
+	background-image: url(Pics/cyberpunk-city-purple-aesthetic-desktop-wallpaper.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	box-sizing: border-box;
+	backdrop-filter: blur(1px);
 }
 
 /* Header */
@@ -46,8 +50,8 @@ main {
 	border-radius: 15px;
 	background: linear-gradient(
 		145deg,
-		rgba(155, 81, 185, 0.8),
-		rgba(114, 36, 150, 0.8)
+		rgba(97, 26, 126, 0.8),
+		rgba(150, 79, 184, 0.8)
 	);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
 		inset 0 0 10px rgba(255, 255, 255, 0.1);
@@ -60,7 +64,7 @@ main {
 
 .card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3),
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.801),
 		inset 0 0 15px rgba(255, 255, 255, 0.2);
 }
 p {
@@ -95,7 +99,7 @@ p {
 	padding: 0px 5px;
 	border-radius: 10px;
 	font-size: 1rem;
-	border: 1px solid black;
+	border: 1px solid rgb(228, 228, 228);
 	background: linear-gradient(
 		145deg,
 		rgba(155, 81, 185, 0.8),
@@ -115,7 +119,7 @@ p {
 .card button:hover {
 	transform: scale(1.2);
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-	border: 1px solid white;
+	border: 1px solid black;
 	color: black;
 }
 
