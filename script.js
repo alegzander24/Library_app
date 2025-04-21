@@ -9,11 +9,13 @@ let myLibrary = [];
 
 // Functions
 
-function Book(name, author, pages, status) {
-	(this.name = name),
-		(this.author = author),
-		(this.pages = pages),
-		(this.status = status);
+class Book {
+	constructor(name, author, pages, status) {
+		this.name = name;
+		this.author = author;
+		this.pages = pages;
+		this.status = status;
+	}
 }
 
 function addBookToLibrary(name, author, pages, status) {
@@ -23,6 +25,10 @@ function addBookToLibrary(name, author, pages, status) {
 		return;
 	}
 	myLibrary.push(new Book(name, author, pages, status));
+}
+
+function removeFromLibrary(name) {
+	myLibrary = myLibrary.filter((book) => book.name !== name);
 }
 
 addBookToLibrary("The hobbit", "John ronald", 1000, false);
@@ -186,13 +192,6 @@ function populateForm(book) {
 	document.getElementById("author").value = book.author;
 	document.getElementById("pages").value = book.pages;
 	document.getElementById("status").checked = book.status;
-}
-
-function removeFromLibrary(name) {
-	console.log(name);
-
-	myLibrary = myLibrary.filter((book) => book.name !== name);
-	console.log(myLibrary);
 }
 
 function toggleStatus(button) {
